@@ -1,0 +1,81 @@
+$HOME/.config/kitty/theme.conf|killall -SIGUSR1 kitty
+
+## name:     Timeless Horizons
+## author:   DrunkLeen (https://github.com/drunkleen)
+## license:  MIT
+## upstream: https://raw.githubusercontent.com/drunkleen/hyde-themes/refs/heads/Timeless-Horizons/Configs/.config/hyde/themes/Timeless%20Horizons/kitty.theme
+## blurb:    Soothing pastel theme for the high-spirited!
+
+
+
+# The basic colors
+foreground              #cde6ff
+background              #1E1E2E
+selection_foreground    #1E1E2E
+selection_background    #F5E0DC
+
+# Cursor colors
+cursor                  #F5E0DC
+cursor_text_color       #1E1E2E
+
+# URL underline color when hovering with mouse
+url_color               #84befe
+
+# Kitty window border colors
+active_border_color     #2ba0cc
+inactive_border_color   #8E95B3
+bell_border_color       #e05020
+
+# OS Window titlebar colors
+wayland_titlebar_color system
+macos_titlebar_color system
+
+# Tab bar colors
+active_tab_foreground   #111111
+active_tab_background   #a686f7
+inactive_tab_foreground #CDD6F4
+inactive_tab_background #181825
+tab_bar_background      #11111B
+
+# Colors for marks (marked text in the terminal)
+mark1_foreground #2e2e3e
+mark1_background #35679f
+mark2_foreground #2e2e3e
+mark2_background #CBA6F7
+mark3_foreground #1E1E2E
+mark3_background #74C7EC
+
+# The 16 terminal colors
+
+# black
+color0 #43465A
+color8 #43465A
+
+# red
+color1 #d7472d
+color9 #d44a32
+
+# green
+color2  #7bc075
+color10 #7bc075
+
+# yellow
+color3  #F9E2AF
+color11 #F9E2AF
+
+# blue
+color4  #35679f
+color12 #35679f
+
+# magenta
+color5  #F5C2E7
+color13 #F5C2E7
+
+# cyan
+color6  #94dae2
+color14 #94dae2
+
+# white
+color7  #CDD6F4
+color15 #A1A8C9
+

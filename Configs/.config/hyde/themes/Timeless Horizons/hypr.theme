@@ -1,0 +1,46 @@
+$HOME/.config/hypr/themes/theme.conf|> $HOME/.config/hypr/themes/colors.conf
+#  // DrunkLeen - https://github.com/drunkleen/
+
+$GTK_THEME=Colloid-Dark
+$ICON_THEME = Tela-circle-nord
+$COLOR_SCHEME = prefer-dark
+
+# Optional: The varibles above will be set automatically when the theme is loaded
+# This exec commands will soon be deprecated
+
+exec = gsettings set org.gnome.desktop.interface icon-theme $ICON_THEME
+exec = gsettings set org.gnome.desktop.interface gtk-theme $GTK_THEME
+exec = gsettings set org.gnome.desktop.interface color-scheme $COLOR_SCHEME
+
+general {
+    gaps_in = 3
+    gaps_out = 8
+    border_size = 3
+    col.active_border = rgba(2ba0ccaa) rgba(9e2c21aa) 45deg
+    col.inactive_border = rgba(002245cc) rgba(a92915cc) 45deg
+    layout = dwindle
+    resize_on_border = true
+}
+
+group {
+    col.border_active = rgba(de541fbb) rgba(004068bb) 45deg
+    col.border_inactive = rgba(161469cc) rgba(481182cc) 45deg
+    col.border_locked_active = rgba(df4e23bb) rgba(053f6cbb) 45deg
+    col.border_locked_inactive = rgba(002245cc) rgba(a92915cc) 45deg
+}
+
+decoration {
+    rounding = 20
+    shadow:enabled = false
+
+    blur {
+        enabled = yes
+        size = 2
+        passes = 3
+        new_optimizations = on
+        ignore_opacity = on
+        xray = false
+    }
+}
+
+layerrule = blur,waybar
